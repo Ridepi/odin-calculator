@@ -1,3 +1,8 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 #calcbox {
     position:fixed;
@@ -5,6 +10,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40vmin;
-    height: 55vmin;
+    height: 60vmin;
     border: 1px solid black;
+}
+
+#screen {
+    position: fixed;
+    width: 80%;
+    height: 15%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    border: 1px solid black;
+}
+
+.btnbox {
+    border: 1px solid  black;
+    position: fixed;
+    width: 80%;
+    height: 70%;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
