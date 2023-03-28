@@ -6,30 +6,44 @@ body {
 
 #calcbox {
     position:fixed;
-    top: 50%;
+    top: 35%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40vmin;
-    height: 60vmin;
+    transform: translate(-50%, -35%);
+    width: 50vmin;
+    height: 70vmin;
     border: 1px solid black;
 }
 
 #screen {
     position: fixed;
     width: 80%;
-    height: 15%;
-    top: 5%;
+    height: 20%;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -5%);
+    transform: translate(-50%, -10%);
     border: 1px solid black;
 }
 
 .btnbox {
-    border: 1px solid  black;
     position: fixed;
     width: 80%;
-    height: 70%;
+    height: 60%;
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, 0%);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2%;
+}
+
+#c {
+    grid-column: 1 / span 1;
+}
+
+#ce {
+    grid-column: 2 / span 1;
+}
+
+#one {
+    grid-column-start: 1;
 }
