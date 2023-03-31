@@ -11,21 +11,29 @@ body {
     transform: translate(-50%, -35%);
     width: 50vmin;
     height: 70vmin;
-    border: 1px solid black;
-    background-color: #FFADBC;
+    border: 1px solid #422842;
+    background-color: #EA8FEA;
     border-radius: 3vmin;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 #screen {
+    font-family: "Roboto", sans-serif;
     position: fixed;
     width: 80%;
     height: 20%;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -10%);
-    border: 1px solid black;
-    background-color: white;
+    border: 1px solid #422842;
+    background-color: #f7eeda;
     border-radius: 1vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .btnbox {
@@ -37,7 +45,7 @@ body {
     transform: translate(-50%, 0%);
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 2%;
+    gap: 1%;
 }
 
 .btn {
@@ -45,13 +53,28 @@ body {
     height: 8vmin;
     width: 8vmin;
     border-radius: 50%;
-}
-#c {
-    grid-column: 1 / span 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2vmin;
+    background-color: #F6E6C2;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-#ce {
-    grid-column: 2 / span 1;
+.btn:hover {
+    transform: translateY(-3%);
+    cursor: pointer
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.numbtn:hover {
+    background-color: #FFAACF;
+}
+
+.opbtn:hover {
+    background-color: #B9F3E4;
 }
 
 #one {
